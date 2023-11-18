@@ -4,6 +4,6 @@
   become: yes
   gather_facts: yes
 
-  roles:
-    - role: buluma.bootstrap
-    - role: buluma.git
+  # roles:
+  #   - role: buluma.bootstrap
+  #   - role: buluma.git

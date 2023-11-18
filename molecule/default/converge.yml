@@ -1,6 +1,11 @@
 ---
 - name: Converge
   hosts: all
+  vars:
+    git_tag: "{{env}}-{{ansible_date_time.date}}"
+    skip_if_tag_matching: "{{env}}*"
+    git_remote: origin
+
   tasks:
     - name: "Include buluma.git_tag"
       include_role:
